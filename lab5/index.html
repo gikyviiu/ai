@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Integration Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Консультант по продаже квартир</h1>
+
+  <!-- Настройки модели -->
+  <div class="settings">
+    <label>Температура: <input type="range" id="temperature-slider" min="0" max="1" step="0.1" value="0.5"></label>
+    <span id="temp-value">0.5</span>
+    
+    <label>Макс. длина ответа: <input type="number" id="max-tokens" min="10" max="200" value="50"></label>
+  </div>
+
+  <!-- История чата -->
+  <div id="chat-history"></div>
+
+  <!-- Ввод пользователя -->
+  <textarea id="user-input" placeholder="Введите сообщение..."></textarea>
+  <button id="send-btn">Отправить</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
